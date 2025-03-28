@@ -1,0 +1,168 @@
+body::before {/* Overlay styling */
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.4); /* Semi-transparent white color */
+    z-index: -1; /* Place the overlay behind the content */
+}
+
+body { /* Body styling, with a background image */
+    font-family: Arial, sans-serif;
+    background-image: url('https://i.imgur.com/hqHHPmF.jpg');
+    background-position:center;
+    background-size:cover;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer { /* Header and footer styling */
+    background-color: rgba(251, 255, 0, 0.5); /* Add a semi-transparent background to allow background image to be seen */
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+    position: relative; /* Remove z-index definition and add position: relative; */
+}
+
+header { /* Header styling */
+    font-family: 'Montserrat', sans-serif; /* Aplicando a fonte Montserrat */
+    color: black; /* Header text color */
+    padding: 20px 0; /* Header top and bottom padding */
+    text-align: center; /* Center-align text */
+    border-bottom: solid #037921; /* Bottom border color */
+}
+
+nav { /*Navigation styling */
+    background-color: #037921; /* Navigation background color */
+    border-top: solid white;
+    border-bottom: solid white;
+    padding: 10px 0; /* Navigation top and bottom padding */
+    margin-top: 20px;
+}
+
+.menu { /* Menu styling */
+    font-family: 'Roboto', sans-serif;
+    list-style-type: none; /* Remove list bullets */
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    text-align: center; /* Center-align items */
+}
+
+.menu li {
+    display: inline; /* Display list items inline */
+    margin: 0 10px; /* Add margin between items */
+}
+
+.menu li a {
+    text-decoration: none; /* Remove link underline */
+    color: #fff; /* Link text color */
+}
+
+.menu li a:hover {
+    color: gray; /* Change link color on hover */
+}
+
+main {/* Main content area styles */
+    max-width: 800px; /* Set maximum width of the main content */
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 20px; /* Add internal spacing to the content */
+}
+
+main section {/* Styles for each section within the main content */
+
+    margin-bottom: 40px; /* Add space between sections of content */
+}
+main h1 { /* Heading (h1) styles */
+    color: #333; /* Set the color of the heading text */
+    font-size: 2em; /* Adjust the font size of the heading */
+    text-align: center; /* Center-align the heading text */
+    margin-bottom: 30px; /* Add space below the heading */
+}
+main h2 { /* Heading (h2) styles */
+    color: #333; /* Set the color of the heading text */
+    font-size: 1.5em; /* Adjust the font size of the heading */
+    text-align: center; /* Center-align the heading text */
+    margin-bottom: 20px; /* Add space below the heading */
+}
+main h3 { /* Heading (h3) styles */
+    color:  black; /* Set the color of the subheading text */
+    font-size: 1.2em; /* Adjust the font size of the subheading */
+    text-align: center; /* Center-align the subheading text */
+    margin-bottom: 15px; /* Add space below the subheading */
+}
+
+main figure {/* Figure styles */
+    margin-bottom: 20px; /* Add space below the figure */
+}
+
+main figure img { /* Image within figure styles */
+    width: 100%; /* Ensure images fill the width of their container */
+    height: auto; /* Maintain image aspect ratio */
+    display: block; /* Remove extra spacing around the image */
+    margin-bottom: 10px; /* Add space below the image */
+}
+
+main figcaption { /* Caption (figcaption) styles */
+    font-style: italic; /* Italicize the caption text */
+    font-size: 0.9em; /* Adjust the font size of the caption */
+    color: #666; /* Set the color of the caption text */
+    text-align: center; /* Center-align the caption text */
+    margin-top: 5px; /* Add space above the caption */
+}
+
+main p { /* Paragraph styles */
+    margin-bottom: 20px; /* Add space between paragraphs */
+}
+
+footer { /* Footer styling */
+    border-top: solid blue; /* Top border color */
+    z-index: 1; /* Set a z-index greater than zero for the footer */
+}
+
+.footer-content { /* Footer content styling */
+    display: flex; /* Display items in a row */
+    justify-content: center; /* Center-align items */
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines if needed */
+}
+
+.footer-section { /* Individual footer section styling */
+    flex: 1; /* Occupy equal horizontal space */
+    padding: 0 20px; /* Add horizontal padding to items */
+}
+
+.footer-section h2 { /* Styling for footer section headings */
+    margin-bottom: 10px; /* Add bottom margin to the heading */
+}
+
+.footer-section ul { /* Styling for lists within footer sections */
+    list-style-type: none; /* Remove list bullets */
+    padding: 0; /* Remove default padding */
+}
+
+.footer-section ul li { /* Styling for list items within footer sections */
+    margin-bottom: 5px; /* Add bottom margin to list items */
+}
+
+.footer-bottom { /* Styling for footer bottom section */
+    color: white; /* Text color */
+    background-color: blue; /* Footer background color */
+    border-top: solid white; /* Top border color */
+    border-bottom: solid white; /* Bottom border color */
+    margin-top: 20px; /* Add top margin to footer */
+    padding: 10px 0; /* Add top and bottom padding to footer */
+}
+.footer-bottom a{ /* Sykling for footer bottom links section */
+    color: white; /* Text color */
+    font-weight: bold; /* Font in bold */
+}
+
+a { /* Styling for all anchor (link) elements */
+    text-decoration: none; /* Remove underline */
+    color: black; /* Set link color */
+    transition: color 0.3s ease; /* Smooth transition for link color change */
+}
+a:hover { /* Hover effect for anchor elements */
+    color: gray; /* Change link color on hover */
+}
